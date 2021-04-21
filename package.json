@@ -1,0 +1,28 @@
+{
+  "name": "create-next-app-default",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "next": "^10.1.1",
+    "postcss": "^8.2.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scrollmagic": "^2.3.0",
+    "react-text-truncate": "^0.16.0",
+    "react-transition-group": "^4.4.1",
+    "tailwindcss": "^2.0.4"
+  }
+}
