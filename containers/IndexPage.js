@@ -42,7 +42,6 @@ const IndexPage = () => {
 			.catch((err) => {
 				console.log(err);
 			});
-			console.log(data, data.length);
 		}
 	}, 15000);
 

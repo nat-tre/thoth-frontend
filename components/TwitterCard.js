@@ -28,13 +28,6 @@ const TwitterCard = (props) => {
 					<h6 className="font-bold text-md">{props.displayName}</h6>
 					<p className="text-xs text-gray-600">@{props.username}</p>
 				</div>
-				{/* <div className="text-right font-bold">
-					{props.label === 'SPAM' ? (
-						<h6 className="text-red-500">SPAM</h6>
-					) : (
-						<h6 className="text-green-400">NOT SPAM</h6>
-					)}
-				</div> */}
 			</div>
 			<div className="w-full mb-4">
 				<p className="text-sm">
