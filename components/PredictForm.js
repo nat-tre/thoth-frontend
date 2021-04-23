@@ -10,6 +10,7 @@ const PredictForm = (props) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		props.predict(text);
+		setText('');
 	};
 
 	return (
