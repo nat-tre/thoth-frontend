@@ -18,7 +18,6 @@ const TwitterCard = (props) => {
 				minHeight: '196px',
 				backgroundColor: props.label === 'SPAM' ? '#FECACA' : '#FFFF'
 			}}
-			// key={props.index}
 		>
 			<div className="w-full flex mb-4">
 				<div className="overflow-hidden rounded-full w-12 h-12">

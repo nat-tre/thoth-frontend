@@ -7,7 +7,7 @@ const ResultModal = (props) => {
 			style={{ background: 'rgba(0, 0, 0, 0.3)' }}
 		>
 			<div className="h-screen w-full absolute flex items-center justify-center bg-modal">
-				<div className="bg-white rounded shadow p-8 m-4 max-w-xs max-h-full text-center overflow-y-scroll">
+				<div className="w-full sm:w-auto bg-white rounded shadow p-8 m-4 max-w-xs max-h-full text-center overflow-y-scroll">
 					<div className="mb-4">
 						<h1 className="text-xl">Your text was{props.type === 'SPAM' ? ' a' : ''}...</h1>
 					</div>

@@ -8,7 +8,6 @@ const PredictForm = (props) => {
 	};
 
 	const handleSubmit = (event) => {
-		console.log(text);
 		event.preventDefault();
 		props.predict(text);
 	};

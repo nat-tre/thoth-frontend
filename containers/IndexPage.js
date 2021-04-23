@@ -82,7 +82,7 @@ const IndexPage = () => {
 			{type ? <ResultModal reset={resetPredictResult} type={type} /> : null}
 			<Navbar />
 			<Section>
-				<Feed predict={handlePredict} tweets={data} />
+				<Feed tweets={data} />
 			</Section>
 			<Section>
 				<Predict predict={handlePredict} />
