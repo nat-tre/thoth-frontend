@@ -12,11 +12,11 @@ const TwitterCard = (props) => {
 	return (
 		<div
 			onClick={() => handleClickedLink(props.tweetId)}
-			className="w-full mx-auto rounded-lg shadow p-5 text-gray-800 cursor-pointer"
+			className="w-full mx-auto mb-4 rounded-lg border-4 shadow-md p-5 text-gray-800 cursor-pointer"
 			style={{
 				maxWidth: '100%',
 				minHeight: '196px',
-				backgroundColor: props.label === 'SPAM' ? '#FECACA' : '#FFFF'
+				borderColor: props.label === 'SPAM' ? '#FECACA' : 'rgba(17, 24, 39,0.2)'
 			}}
 		>
 			<div className="w-full flex mb-4">
@@ -27,6 +27,13 @@ const TwitterCard = (props) => {
 					<h6 className="font-bold text-md">{props.displayName}</h6>
 					<p className="text-xs text-gray-600">@{props.username}</p>
 				</div>
+				{props.label === 'SPAM' ? (
+					<div className="text-right font-bold text-lg text-red-500">
+						<svg xmlns="http://www.w3.org/2000/svg" className="fill-current w-5 pt-1" viewBox="0 0 24 24">
+							<path d="M12 1l-12 22h24l-12-22zm-1 8h2v7h-2v-7zm1 11.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" />
+						</svg>
+					</div>
+				) : null}
 			</div>
 			<div className="w-full mb-4">
 				<p className="text-sm">

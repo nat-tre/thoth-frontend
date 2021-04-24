@@ -1,10 +1,12 @@
 import React from 'react';
 
 import TwitterCard from './TwitterCard';
+import PlaceholderCard from './PlaceholderCard'
 
 const Feed = (props) => {
 	let tweets = (
 		<div className="w-auto lg:w-5/6 mx-auto lg:mr-0" style={{ height: '500px' }}>
+			<PlaceholderCard />
 			{props.tweets.map((tweet) => {
 				return (
 					<TwitterCard
