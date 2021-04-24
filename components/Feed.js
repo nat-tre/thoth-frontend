@@ -1,7 +1,7 @@
 import React from 'react';
 
 import TwitterCard from './TwitterCard';
-import PlaceholderCard from './PlaceholderCard'
+import PlaceholderCard from './PlaceholderCard';
 
 const Feed = (props) => {
 	let tweets = (

@@ -245,30 +245,27 @@ html {
 
 /* make scrollbar always visible */
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
+	-webkit-appearance: none;
+	width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, .5);
-  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-	color: rgba(17, 24, 39,1);
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .5);
+	box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+	color: rgba(17, 24, 39, 1);
 }
 
-/* Spinner */
-.loader {
-  border-top-color: #3498db;
-  -webkit-animation: spinner 1.5s linear infinite;
-  animation: spinner 1.5s linear infinite;
+/* placeholder */
+.placeholder {
+	animation: loading 2s linear infinite alternate-reverse backwards;
 }
 
-@-webkit-keyframes spinner {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spinner {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+@keyframes loading {
+	from {
+		background-color: rgba(229, 231, 235, 0.6);
+	}
+	to {
+		background-color: rgba(209, 213, 219, 0.7);
+	}
 }
