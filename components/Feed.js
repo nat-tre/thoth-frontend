@@ -5,7 +5,7 @@ import PlaceholderCard from './PlaceholderCard';
 
 const Feed = (props) => {
 	let tweets = (
-		<div className="w-auto lg:w-5/6 mx-auto lg:mr-0" style={{ height: '500px' }}>
+		<div className="w-auto xl:w-5/6 mx-auto lg:mr-0" style={{ height: '500px' }}>
 			<PlaceholderCard />
 			{props.tweets.map((tweet) => {
 				return (
@@ -26,7 +26,7 @@ const Feed = (props) => {
 
 	return (
 		<div>
-			<div className="mt-20 sm:mt-0 leading-normal tracking-normal text-gray-900">
+			<div className="mt-20 xl:mt-0 leading-normal tracking-normal text-gray-900">
 				<div className="h-screen bg-right bg-cover">
 					<div className="container px-6 mx-auto flex flex-wrap md:flex-row h-screen items-center">
 						<div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
